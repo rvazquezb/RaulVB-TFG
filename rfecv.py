@@ -13,7 +13,7 @@ from sklearn.model_selection import StratifiedKFold
 
 start_time = time.monotonic()
 
-csv = pd.read_csv('semana_final_tras_correlacion.csv')
+csv = pd.read_csv('semana_final_definitiva.csv')
 
 le = preprocessing.LabelEncoder()
 le.fit(csv["Label"].unique())
