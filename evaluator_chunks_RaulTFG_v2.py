@@ -146,7 +146,7 @@ v = args.v
 data_golden = pd.read_csv(gpath, sep="\t", header=0)
 data_result = pd.read_csv(ppath, sep="\t", header=0)
 
-# Merge tables (data) on common field 'entity_id' to compare the true risk and the decision risk
+# Merge tables (data) on common field 'flow_id' to compare the true risk and the decision risk
 data = data_golden.merge(data_result, on='flow_id', how='right')
 
 # ---------------------
